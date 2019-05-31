@@ -3,6 +3,8 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
+**Currently in Development, might not be very stable, and features are incomplete**
+
 The goal of RsemanticLibrarian is to provide R functions to use the Semantic Librarian for document search, as a function of semantic similarity.
 
 ## Installation
