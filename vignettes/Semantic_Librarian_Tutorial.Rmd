@@ -32,6 +32,7 @@ This tutorial describes how to use the Semantic Librarian functions. Presntly, t
 - `author_list` a vector containing the first 100 author names
 - `dictionary_words` a vector containing 100 words, much smaller than actual dictionary
 - `WordVectors` a matrix containing the semantic vectors for each word in `dictionary_words`.
+- `AuthorVectors` a matrix of semantic vectors for each author
 
 The entire data set can be downloaded from the github repository for the R Shiny Semantic Libararian app [https://github.com/CrumpLab/SemanticLibrarian](https://github.com/CrumpLab/SemanticLibrarian)
 
@@ -121,5 +122,52 @@ p$elementId <- NULL
 p
 ```
 
+## Abstract similarity
 
+The `get_article_article_similarities()` function compares an existing abstract to all other abstracts in the data set, and returns a new data frame containing all of the abstracts with a column for Similarity between the target article and all other articles.
+
+```{r}
+an_article <- article_df[1,]$title
+print(as.character(an_article))
+
+sims <- get_article_article_similarities(an_article, article_vectors, article_df)
+
+# look at top 10
+knitr::kable(head(sims), format="html", escape=FALSE)
+```
+
+## Author Similarity
+
+All of the authors in the database are also coded as semantic vectors. Author vectors are the sum of the abstract vectors for each author. Use `get_author_simimilarities()` to compute the similarity between one author and all other authors.
+
+```{r}
+sims <- get_author_similarities(author_list[1])
+
+# top 5 authors
+knitr::kable(head(sims), format="html", escape=FALSE)
+```
+
+## plot author similarity
+
+Use the get_mds_author_fits()` function to create a dataframe with x,y coordinates for each author, based on multi-dimensional scaling
+
+```{r}
+author_sims <- get_author_similarities(author_list[1])
+author_MDS <- get_mds_author_fits(15,3,author_sims,AuthorVectors)
+```
+
+Using ggplot with text repel to view the author similarities in 2-D.
+
+```{r}
+library(ggrepel)
+ ggplot(author_MDS, aes(x=X, y=Y, color=as.factor(cluster),
+                                label=author, shape=selected_author))+
+        geom_hline(yintercept=0, color="grey")+
+        geom_vline(xintercept=0, color="grey")+
+        geom_point(aes(size=Similarity), alpha=.75)+
+        geom_text_repel(aes(size=Similarity),color="black", force=1.5)+
+        scale_size(range = c(4, 7))+
+        theme_void()+
+        theme(legend.position = "none")
+```
 

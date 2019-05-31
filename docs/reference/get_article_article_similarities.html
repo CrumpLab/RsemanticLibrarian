@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • RsemanticLibrarian</title>
+<title>Compute similarity between an abstract and all other abstracts — get_article_article_similarities • RsemanticLibrarian</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,7 +30,10 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Compute similarity between an abstract and all other abstracts — get_article_article_similarities" />
+
+<meta property="og:description" content="Compute similarity between an abstract and all other abstracts" />
+<meta name="twitter:card" content="summary" />
 
 
 
@@ -47,7 +50,7 @@
   </head>
 
   <body>
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -101,96 +104,59 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Compute similarity between an abstract and all other abstracts</h1>
+    
+    <div class="hidden name"><code>get_article_article_similarities.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    
+    <p>Compute similarity between an abstract and all other abstracts</p>
+    
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
-
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      <tr>
-        
-        <td>
-          <p><code><a href="RsemanticLibrarian-package.html">RsemanticLibrarian-package</a></code> </p>
-        </td>
-        <td><p>A short title line describing what the package does</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="cosine_x_to_m.html">cosine_x_to_m()</a></code> </p>
-        </td>
-        <td><p>Cosine vector to matrix</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_article_article_similarities.html">get_article_article_similarities()</a></code> </p>
-        </td>
-        <td><p>Compute similarity between an abstract and all other abstracts</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_author_similarities.html">get_author_similarities()</a></code> </p>
-        </td>
-        <td><p>Compute Similarities between one author, and all other authors</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_mds_article_fits.html">get_mds_article_fits()</a></code> </p>
-        </td>
-        <td><p>Multidimensional scaling for article similarity</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_mds_author_fits.html">get_mds_author_fits()</a></code> </p>
-        </td>
-        <td><p>Multi-dimensional scaling for author similarity</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_search_article_similarities.html">get_search_article_similarities()</a></code> </p>
-        </td>
-        <td><p>Title</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_search_terms.html">get_search_terms()</a></code> </p>
-        </td>
-        <td><p>Get search terms in dictionary</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="normalize_vector.html">normalize_vector()</a></code> </p>
-        </td>
-        <td><p>Normalize a vector by max absolute value</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="wrap_string.html">wrap_string()</a></code> </p>
-        </td>
-        <td><p>Wrap a string</p></td>
-      </tr>
-    </tbody>
+    <pre class="usage"><span class='fu'>get_article_article_similarities</span>(<span class='no'>a_title</span>, <span class='kw'>a_vectors</span> <span class='kw'>=</span> <span class='no'>article_vectors</span>,
+  <span class='kw'>a_df</span> <span class='kw'>=</span> <span class='no'>article_df</span>)</pre>
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>a_title</th>
+      <td><p>charcter, the title of an abstract</p></td>
+    </tr>
+    <tr>
+      <th>a_vectors</th>
+      <td><p>matrix, of semantic vectors for the abstracts (e.g., <code>article_vectors</code>)</p></td>
+    </tr>
+    <tr>
+      <th>a_df</th>
+      <td><p>dataframe, of abstract information (e.g., `article_df``)</p></td>
+    </tr>
     </table>
-  </div>
+    
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
+    <p>dataframe, of abstract information with Similiarities to target abstract appended</p>
+    
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'>
+<span class='no'>an_article</span> <span class='kw'>&lt;-</span> <span class='no'>article_df</span>[<span class='fl'>1</span>,]$<span class='no'>title</span>
+<span class='no'>sims</span> <span class='kw'>&lt;-</span> <span class='fu'>get_article_article_similarities</span>(<span class='no'>an_article</span>, <span class='no'>article_vectors</span>, <span class='no'>article_df</span>)</div></pre>
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-all-functions">All functions</a></li>
+      <li><a href="#arguments">Arguments</a></li>
+      
+      <li><a href="#value">Value</a></li>
+      
+      <li><a href="#examples">Examples</a></li>
     </ul>
+
   </div>
 </div>
 

@@ -2,7 +2,10 @@
 
 export("%>%")
 export(cosine_x_to_m)
+export(get_article_article_similarities)
+export(get_author_similarities)
 export(get_mds_article_fits)
+export(get_mds_author_fits)
 export(get_search_article_similarities)
 export(get_search_terms)
 export(normalize_vector)

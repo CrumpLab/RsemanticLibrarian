@@ -96,6 +96,8 @@
 <code>dictionary_words</code> a vector containing 100 words, much smaller than actual dictionary</li>
 <li>
 <code>WordVectors</code> a matrix containing the semantic vectors for each word in <code>dictionary_words</code>.</li>
+<li>
+<code>AuthorVectors</code> a matrix of semantic vectors for each author</li>
 </ul>
 <p>The entire data set can be downloaded from the github repository for the R Shiny Semantic Libararian app <a href="https://github.com/CrumpLab/SemanticLibrarian">https://github.com/CrumpLab/SemanticLibrarian</a></p>
 <div id="searching-the-semantic-librarian" class="section level2">
@@ -377,9 +379,362 @@ Canadian Psychology—Past, Present And Future.
 <a class="sourceLine" id="cb7-27" data-line-number="27"></a>
 <a class="sourceLine" id="cb7-28" data-line-number="28">p<span class="op">$</span>elementId &lt;-<span class="st"> </span><span class="ot">NULL</span></a>
 <a class="sourceLine" id="cb7-29" data-line-number="29">p</a></code></pre></div>
-<div id="htmlwidget-4e504e9c196d9aa5be73" style="width:672px;height:480px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4e504e9c196d9aa5be73">{"x":{"data":[{"x":[-0.0921222864780044,0.115523192132061],"y":[0,0],"text":"","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(190,190,190,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0,0],"y":[-0.0975813605432416,0.0481282527745414],"text":"","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(190,190,190,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-0.00339339822101564,-0.0198591341998206,-0.0826838556320923,-0.0700043044137797],"y":[-0.0489419510901279,-0.0347300450159274,-0.0506036912533926,-0.0909581963015242],"text":["Foreword By The President.","Research Planning In The Canadian Psychological <br> Association. I. Report On Experimental, <br> Physiological, And Comparative Psychology.","Canadian Theses In Psychology, 1948.","Statement Of Editorial Policy."],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(248,118,109,1)","opacity":0.75,"size":[22.6771653543307,19.1762741359858,12.8496459231062,3.77952755905512],"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"1","legendgroup":"1","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.0266504880418015,0.0557818207981345,0.0462031915346538,0.0650435123698366,0.0784950943799206,0.081255153704775,0.106084761286149],"y":[-0.00372873145721697,0.0230145571888746,0.00356598120556169,0.0265588105964431,-0.0430728157395731,-0.0756250539943915,0.0187327731072747],"text":["Professor Chester E. Kellogg.","Maritime Psychological Association.","The Certification Of Psychologists In Canada.","Proceedings Of The Annual Meeting Of The <br> Psychological Association Of The Province Of <br> Quebec.","Membership List, September 1947.","Constitution Of The Canadian Psychological <br> Association.","Ontario Psychological Association."],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,186,56,1)","opacity":0.75,"size":[19.5691685394452,18.6674457595874,17.1833585479178,17.1704234993976,12.9896859042534,11.5278492304049,11.331744145034],"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(0,186,56,1)"}},"hoveron":"points","name":"2","legendgroup":"2","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-0.0425499174626218,0.00223981063665862,-0.00937859414036249,-0.0576364822314851,-0.0230708288538364,-0.0149771879917453,-0.0250235882022031,0.0175999223984266,-0.0315596617891702,0.000917537098836536,-0.0318497277589596,-0.0302545959187609,-0.0160955193202311,-0.0219344961131087],"y":[0.0182195469749932,-0.0041345512015812,0.0263465228801496,0.0367619152193141,0.00852325314736451,-0.00730795086478587,0.0313265456996133,0.00845641606281418,0.0263692206218992,0.041505088532824,0.0151418737156925,0.032547177664207,0.0189060477416081,0.0231272565598869],"text":["The Teaching Of Psychology In Canadian <br> Universities.","Canadian Psychology—Past, Present And Future.","The First Course In Psychology In Canadian <br> Universities.","Psychology From The Standpoint Of A Psychiatrist.","Review Of Physiological Psychology.","Psychology And The Canadian Social Science <br> Research Council.","The Interdisciplinary Approach To Training In The <br> Clinical Fields Of Psychology.","National Research Council Associate Committee On <br> Applied Psychology.","Review Of Psychology (5Th Ed.).","A Progress Report On Industrial Psychology.","Research Objectives For Social Psychology.","Review Of Training In Clinical Psychology: <br> Transactions Of The First Conference, March <br> 27-28, 1947.","Research Planning In The Canadian Psychological <br> Association. Ii. Report On Social Psychology.","Research Planning In Clinical Psychology."],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(97,156,255,1)","opacity":0.75,"size":[20.3823935045165,17.875737984663,16.1441296510881,16.0911529997773,15.9353340270169,15.9260608012945,15.808267283409,14.8656797290693,14.8628970245544,14.1678120875846,12.623214243297,11.8853206433419,11.8176932091303,9.3325421614337],"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(97,156,255,1)"}},"hoveron":"points","name":"3","legendgroup":"3","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":16,"r":0,"b":0,"l":0},"font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.0921222864780044,0.115523192132061],"tickmode":"array","ticktext":["-0.05","0.00","0.05","0.10"],"tickvals":[-0.05,0,0.05,0.1],"categoryorder":"array","categoryarray":["-0.05","0.00","0.05","0.10"],"nticks":null,"ticks":"outside","tickcolor":null,"ticklen":0,"tickwidth":0,"showticklabels":false,"tickfont":{"color":null,"family":null,"size":0},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":true,"anchor":"y","title":"","hoverformat":".2f","fixedrange":true},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.0975813605432416,0.0481282527745414],"tickmode":"array","ticktext":["-0.05","0.00"],"tickvals":[-0.05,0],"categoryorder":"array","categoryarray":["-0.05","0.00"],"nticks":null,"ticks":"outside","tickcolor":null,"ticklen":0,"tickwidth":0,"showticklabels":false,"tickfont":{"color":null,"family":null,"size":0},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":true,"anchor":"x","title":"","hoverformat":".2f","fixedrange":true},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false,"displayModeBar":false},"source":"article_SS_plot","attrs":{"b4825a150be4":{"yintercept":{},"type":"scatter"},"b4821bbfd3f0":{"xintercept":{}},"b4824ef33fcb":{"size":{},"x":{},"y":{},"colour":{},"text":{}}},"cur_data":"b4825a150be4","visdat":{"b4825a150be4":["function (y) ","x"],"b4821bbfd3f0":["function (y) ","x"],"b4824ef33fcb":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-cba658848791fbb6a25d" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-cba658848791fbb6a25d">{"x":{"data":[{"x":[-0.0921222864780044,0.115523192132061],"y":[0,0],"text":"","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(190,190,190,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0,0],"y":[-0.0975813605432416,0.0481282527745414],"text":"","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(190,190,190,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-0.00339339822101564,-0.0198591341998206,-0.0826838556320923,-0.0700043044137797],"y":[-0.0489419510901279,-0.0347300450159274,-0.0506036912533926,-0.0909581963015242],"text":["Foreword By The President.","Research Planning In The Canadian Psychological <br> Association. I. Report On Experimental, <br> Physiological, And Comparative Psychology.","Canadian Theses In Psychology, 1948.","Statement Of Editorial Policy."],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(248,118,109,1)","opacity":0.75,"size":[22.6771653543307,19.1762741359858,12.8496459231062,3.77952755905512],"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"1","legendgroup":"1","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.0266504880418015,0.0557818207981345,0.0462031915346538,0.0650435123698366,0.0784950943799206,0.081255153704775,0.106084761286149],"y":[-0.00372873145721697,0.0230145571888746,0.00356598120556169,0.0265588105964431,-0.0430728157395731,-0.0756250539943915,0.0187327731072747],"text":["Professor Chester E. Kellogg.","Maritime Psychological Association.","The Certification Of Psychologists In Canada.","Proceedings Of The Annual Meeting Of The <br> Psychological Association Of The Province Of <br> Quebec.","Membership List, September 1947.","Constitution Of The Canadian Psychological <br> Association.","Ontario Psychological Association."],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,186,56,1)","opacity":0.75,"size":[19.5691685394452,18.6674457595874,17.1833585479178,17.1704234993976,12.9896859042534,11.5278492304049,11.331744145034],"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(0,186,56,1)"}},"hoveron":"points","name":"2","legendgroup":"2","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-0.0425499174626218,0.00223981063665862,-0.00937859414036249,-0.0576364822314851,-0.0230708288538364,-0.0149771879917453,-0.0250235882022031,0.0175999223984266,-0.0315596617891702,0.000917537098836536,-0.0318497277589596,-0.0302545959187609,-0.0160955193202311,-0.0219344961131087],"y":[0.0182195469749932,-0.0041345512015812,0.0263465228801496,0.0367619152193141,0.00852325314736451,-0.00730795086478587,0.0313265456996133,0.00845641606281418,0.0263692206218992,0.041505088532824,0.0151418737156925,0.032547177664207,0.0189060477416081,0.0231272565598869],"text":["The Teaching Of Psychology In Canadian <br> Universities.","Canadian Psychology—Past, Present And Future.","The First Course In Psychology In Canadian <br> Universities.","Psychology From The Standpoint Of A Psychiatrist.","Review Of Physiological Psychology.","Psychology And The Canadian Social Science <br> Research Council.","The Interdisciplinary Approach To Training In The <br> Clinical Fields Of Psychology.","National Research Council Associate Committee On <br> Applied Psychology.","Review Of Psychology (5Th Ed.).","A Progress Report On Industrial Psychology.","Research Objectives For Social Psychology.","Review Of Training In Clinical Psychology: <br> Transactions Of The First Conference, March <br> 27-28, 1947.","Research Planning In The Canadian Psychological <br> Association. Ii. Report On Social Psychology.","Research Planning In Clinical Psychology."],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(97,156,255,1)","opacity":0.75,"size":[20.3823935045165,17.875737984663,16.1441296510881,16.0911529997773,15.9353340270169,15.9260608012945,15.808267283409,14.8656797290693,14.8628970245544,14.1678120875846,12.623214243297,11.8853206433419,11.8176932091303,9.3325421614337],"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(97,156,255,1)"}},"hoveron":"points","name":"3","legendgroup":"3","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":16,"r":0,"b":0,"l":0},"font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.0921222864780044,0.115523192132061],"tickmode":"array","ticktext":["-0.05","0.00","0.05","0.10"],"tickvals":[-0.05,0,0.05,0.1],"categoryorder":"array","categoryarray":["-0.05","0.00","0.05","0.10"],"nticks":null,"ticks":"outside","tickcolor":null,"ticklen":0,"tickwidth":0,"showticklabels":false,"tickfont":{"color":null,"family":null,"size":0},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":true,"anchor":"y","title":"","hoverformat":".2f","fixedrange":true},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.0975813605432416,0.0481282527745414],"tickmode":"array","ticktext":["-0.05","0.00"],"tickvals":[-0.05,0],"categoryorder":"array","categoryarray":["-0.05","0.00"],"nticks":null,"ticks":"outside","tickcolor":null,"ticklen":0,"tickwidth":0,"showticklabels":false,"tickfont":{"color":null,"family":null,"size":0},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":true,"anchor":"x","title":"","hoverformat":".2f","fixedrange":true},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false,"displayModeBar":false},"source":"article_SS_plot","attrs":{"be894289d19e":{"yintercept":{},"type":"scatter"},"be896620fe32":{"xintercept":{}},"be8910b900":{"size":{},"x":{},"y":{},"colour":{},"text":{}}},"cur_data":"be894289d19e","visdat":{"be894289d19e":["function (y) ","x"],"be896620fe32":["function (y) ","x"],"be8910b900":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
+</div>
+<div id="abstract-similarity" class="section level2">
+<h2 class="hasAnchor">
+<a href="#abstract-similarity" class="anchor"></a>Abstract similarity</h2>
+<p>The <code><a href="../reference/get_article_article_similarities.html">get_article_article_similarities()</a></code> function compares an existing abstract to all other abstracts in the data set, and returns a new data frame containing all of the abstracts with a column for Similarity between the target article and all other articles.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1">an_article &lt;-<span class="st"> </span>article_df[<span class="dv">1</span>,]<span class="op">$</span>title</a>
+<a class="sourceLine" id="cb8-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/print">print</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/character">as.character</a></span>(an_article))</a>
+<a class="sourceLine" id="cb8-3" data-line-number="3"><span class="co">#&gt; [1] "Foreword By The President."</span></a>
+<a class="sourceLine" id="cb8-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb8-5" data-line-number="5">sims &lt;-<span class="st"> </span><span class="kw"><a href="../reference/get_article_article_similarities.html">get_article_article_similarities</a></span>(an_article, article_vectors, article_df)</a>
+<a class="sourceLine" id="cb8-6" data-line-number="6"></a>
+<a class="sourceLine" id="cb8-7" data-line-number="7"><span class="co"># look at top 10</span></a>
+<a class="sourceLine" id="cb8-8" data-line-number="8">knitr<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/knitr/topics/kable">kable</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/head">head</a></span>(sims), <span class="dt">format=</span><span class="st">"html"</span>, <span class="dt">escape=</span><span class="ot">FALSE</span>)</a></code></pre></div>
+<table class="table">
+<thead><tr>
+<th style="text-align:left;">
+formatted_column
+</th>
+<th style="text-align:left;">
+title
+</th>
+<th style="text-align:left;">
+wrap_title
+</th>
+<th style="text-align:right;">
+year
+</th>
+<th style="text-align:right;">
+index
+</th>
+<th style="text-align:right;">
+Similarity
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<h4>
+Foreword By The President.
+</h4>
+<p style="font-size:12px">
+Bernhardt, Karl S.
+</p>
+<p style="font-size:11px">
+Canadian Journal Of Experimental Psychology, 1,1-2
+</p>
+<p style="font-size:11px">
+Presents an introduction to this first issue of the Canadian Journal of Psychology. With the publication of this journal, another important milestone in the advance of psychological studies in Canada has been passed. For six years the Canadian Psychological Association has published a Bulletin. This is now replaced by a quarterly journal, which will provide a much more adequate medium for the publication in Canada of scholarly and scientific works. The change, therefore, is far more than one of name. The new journal begins with a modest issue of forty-eight pages, but with every prospect of expansion in the near future, if the members of the Association give it wholehearted co-operation.
+</p>
+</td>
+<td style="text-align:left;">
+Foreword By The President.
+</td>
+<td style="text-align:left;">
+Foreword By The President.
+</td>
+<td style="text-align:right;">
+1947
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+1.0000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<h4>
+Canadian Psychology—Past, Present And Future.
+</h4>
+<p style="font-size:12px">
+Bernhardt, Karl S.
+</p>
+<p style="font-size:11px">
+Canadian Journal Of Experimental Psychology, 2,49-60
+</p>
+<p style="font-size:11px">
+In this presidential address to the Canadian Psychological Association, Bernhardt first reviews the past and the present status of the group. He then suggests an outline for future development. The first principle is that research and application must proceed together—that psychology must have the goal of human happiness and efficient living. This program can be furthered by the development of interlaboratory and even international cooperation in research. At the same time, the results of research must be broadcast to a wider public. Three dangers are stressed: premature application, the development of an esoteric and empty vocabulary, and an overemphasis on clinical practice as opposed to work with normal people.
+</p>
+</td>
+<td style="text-align:left;">
+Canadian Psychology—Past, Present And Future.
+</td>
+<td style="text-align:left;">
+Canadian Psychology—Past, Present And Future.
+</td>
+<td style="text-align:right;">
+1947
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+0.9202
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<h4>
+Professor Chester E. Kellogg.
+</h4>
+<p style="font-size:12px">
+Nolast, Nofirst
+</p>
+<p style="font-size:11px">
+Canadian Journal Of Experimental Psychology, 3,136-136
+</p>
+<p style="font-size:11px">
+Chester E. Kellogg, Professor and former Chairman of the Department of Psychology, McGill University, died at his home in St. Lambert, Quebec, on July 2nd, 1948. To the members of the Canadian Psychological Association, Dr. Kellogg is, perhaps, best known as Honorary President of the Canadian Psychological Association for the year 1946-47. His publications dealt with education, test construction-particularly with tests suitable for the examination of illiterates,-and statistical methodology. His contribution to Canadian psychology, in his personal contacts and stimulus to others, went far beyond the concrete evidence of the written word.
+</p>
+</td>
+<td style="text-align:left;">
+Professor Chester E. Kellogg.
+</td>
+<td style="text-align:left;">
+Professor Chester E. Kellogg.
+</td>
+<td style="text-align:right;">
+1948
+</td>
+<td style="text-align:right;">
+67
+</td>
+<td style="text-align:right;">
+0.9187
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<h4>
+The First Course In Psychology In Canadian Universities.
+</h4>
+<p style="font-size:12px">
+Liddy, R. B.; Neal, Leola E.
+</p>
+<p style="font-size:11px">
+Canadian Journal Of Experimental Psychology, 2,61-66
+</p>
+<p style="font-size:11px">
+A summary is presented of questionnaires completed by 25 colleges and universities, regarding the introductory course in psychology. It appears that in general a relatively small amount of time is devoted to class discussion, demonstration, and experiment, and that reasonably satisfactory results can be achieved with large classes (960 is the largest reported). The objectives of the course are classified under 4 headings: to understand what psychology is, to develop a sound point of view toward the study of human affairs, to lay the basis for advanced study, and to show the pertinence of valid psychological knowledge to everyday practical affairs. When this line of questioning was extended to 435 students at the University of Western Ontario, 48% checked as the most important aim the improvement of social and personal adjustments, with 27% more voting for the development of habits of critical thinking about everyday psychological problems.
+</p>
+</td>
+<td style="text-align:left;">
+The First Course In Psychology In Canadian Universities.
+</td>
+<td style="text-align:left;">
+The First Course In Psychology In Canadian <br> Universities.
+</td>
+<td style="text-align:right;">
+1947
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+0.9137
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<h4>
+Research Planning In The Canadian Psychological Association. I. Report On Experimental, Physiological, And Comparative Psychology.
+</h4>
+<p style="font-size:12px">
+Hebb, D. O.
+</p>
+<p style="font-size:11px">
+Canadian Journal Of Experimental Psychology, 1,13-14
+</p>
+<p style="font-size:11px">
+Important theoretical advances seem to be imminent, stemming from the physiological and anatomical work of such men as Lorente de Nó, Dusser de Barenne, and McCulloch, and from such more strictly psychological formulations as those of Hull. It is urged that Canadian psychologists take a more active part in these developments.
+</p>
+</td>
+<td style="text-align:left;">
+Research Planning In The Canadian Psychological Association. I. Report On Experimental, Physiological, And Comparative Psychology.
+</td>
+<td style="text-align:left;">
+Research Planning In The Canadian Psychological <br> Association. I. Report On Experimental, <br> Physiological, And Comparative Psychology.
+</td>
+<td style="text-align:right;">
+1948
+</td>
+<td style="text-align:right;">
+40
+</td>
+<td style="text-align:right;">
+0.9107
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<h4>
+National Research Council Associate Committee On Applied Psychology.
+</h4>
+<p style="font-size:12px">
+Ault, O. E.
+</p>
+<p style="font-size:11px">
+Canadian Journal Of Experimental Psychology, 4,187-190
+</p>
+<p style="font-size:11px">
+At the meeting of the National Research Council, March 19, 1948, it was decided to appoint an Associate Committee on Applied Psychology for the purpose of fostering fundamental psychological research and its application to problems of national importance in Canada. This marks the culmination of a series of steps through which the Canadian Psychological Association has collaborated with federal authorities since its formation in 1938. The history of this action is briefly reviewed. Other information provided includes the Committee members, as well as a list of special interest areas for research grants.
+</p>
+</td>
+<td style="text-align:left;">
+National Research Council Associate Committee On Applied Psychology.
+</td>
+<td style="text-align:left;">
+National Research Council Associate Committee On <br> Applied Psychology.
+</td>
+<td style="text-align:right;">
+1948
+</td>
+<td style="text-align:right;">
+75
+</td>
+<td style="text-align:right;">
+0.9105
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="author-similarity" class="section level2">
+<h2 class="hasAnchor">
+<a href="#author-similarity" class="anchor"></a>Author Similarity</h2>
+<p>All of the authors in the database are also coded as semantic vectors. Author vectors are the sum of the abstract vectors for each author. Use <code>get_author_simimilarities()</code> to compute the similarity between one author and all other authors.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1">sims &lt;-<span class="st"> </span><span class="kw"><a href="../reference/get_author_similarities.html">get_author_similarities</a></span>(author_list[<span class="dv">1</span>])</a>
+<a class="sourceLine" id="cb9-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb9-3" data-line-number="3"><span class="co"># top 5 authors</span></a>
+<a class="sourceLine" id="cb9-4" data-line-number="4">knitr<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/knitr/topics/kable">kable</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/head">head</a></span>(sims), <span class="dt">format=</span><span class="st">"html"</span>, <span class="dt">escape=</span><span class="ot">FALSE</span>)</a></code></pre></div>
+<table class="table">
+<thead><tr>
+<th style="text-align:left;">
+author
+</th>
+<th style="text-align:right;">
+Similarity
+</th>
+<th style="text-align:left;">
+selected_author
+</th>
+<th style="text-align:right;">
+index
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Aaronson, Doris
+</td>
+<td style="text-align:right;">
+1.0000
+</td>
+<td style="text-align:left;">
+selected
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Abdel Rahman, Rasha
+</td>
+<td style="text-align:right;">
+0.9787
+</td>
+<td style="text-align:left;">
+other
+</td>
+<td style="text-align:right;">
+16
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Acheson, Daniel J.
+</td>
+<td style="text-align:right;">
+0.9753
+</td>
+<td style="text-align:left;">
+other
+</td>
+<td style="text-align:right;">
+52
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Abrams, Lise
+</td>
+<td style="text-align:right;">
+0.9735
+</td>
+<td style="text-align:left;">
+other
+</td>
+<td style="text-align:right;">
+43
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Adams, John K.
+</td>
+<td style="text-align:right;">
+0.9719
+</td>
+<td style="text-align:left;">
+other
+</td>
+<td style="text-align:right;">
+93
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ackerman, Rakefet
+</td>
+<td style="text-align:right;">
+0.9706
+</td>
+<td style="text-align:left;">
+other
+</td>
+<td style="text-align:right;">
+57
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="plot-author-similarity" class="section level2">
+<h2 class="hasAnchor">
+<a href="#plot-author-similarity" class="anchor"></a>plot author similarity</h2>
+<p>Use the get_mds_author_fits()` function to create a dataframe with x,y coordinates for each author, based on multi-dimensional scaling</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1">author_sims &lt;-<span class="st"> </span><span class="kw"><a href="../reference/get_author_similarities.html">get_author_similarities</a></span>(author_list[<span class="dv">1</span>])</a>
+<a class="sourceLine" id="cb10-2" data-line-number="2">author_MDS &lt;-<span class="st"> </span><span class="kw"><a href="../reference/get_mds_author_fits.html">get_mds_author_fits</a></span>(<span class="dv">15</span>,<span class="dv">3</span>,author_sims,AuthorVectors)</a></code></pre></div>
+<p>Using ggplot with text repel to view the author similarities in 2-D.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(ggrepel)</a>
+<a class="sourceLine" id="cb11-2" data-line-number="2"> <span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>(author_MDS, <span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(<span class="dt">x=</span>X, <span class="dt">y=</span>Y, <span class="dt">color=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/factor">as.factor</a></span>(cluster),</a>
+<a class="sourceLine" id="cb11-3" data-line-number="3">                                <span class="dt">label=</span>author, <span class="dt">shape=</span>selected_author))<span class="op">+</span></a>
+<a class="sourceLine" id="cb11-4" data-line-number="4"><span class="st">        </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/geom_abline">geom_hline</a></span>(<span class="dt">yintercept=</span><span class="dv">0</span>, <span class="dt">color=</span><span class="st">"grey"</span>)<span class="op">+</span></a>
+<a class="sourceLine" id="cb11-5" data-line-number="5"><span class="st">        </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/geom_abline">geom_vline</a></span>(<span class="dt">xintercept=</span><span class="dv">0</span>, <span class="dt">color=</span><span class="st">"grey"</span>)<span class="op">+</span></a>
+<a class="sourceLine" id="cb11-6" data-line-number="6"><span class="st">        </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/geom_point">geom_point</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(<span class="dt">size=</span>Similarity), <span class="dt">alpha=</span>.<span class="dv">75</span>)<span class="op">+</span></a>
+<a class="sourceLine" id="cb11-7" data-line-number="7"><span class="st">        </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggrepel/topics/geom_text_repel">geom_text_repel</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(<span class="dt">size=</span>Similarity),<span class="dt">color=</span><span class="st">"black"</span>, <span class="dt">force=</span><span class="fl">1.5</span>)<span class="op">+</span></a>
+<a class="sourceLine" id="cb11-8" data-line-number="8"><span class="st">        </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/scale_size">scale_size</a></span>(<span class="dt">range =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="dv">4</span>, <span class="dv">7</span>))<span class="op">+</span></a>
+<a class="sourceLine" id="cb11-9" data-line-number="9"><span class="st">        </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/ggtheme">theme_void</a></span>()<span class="op">+</span></a>
+<a class="sourceLine" id="cb11-10" data-line-number="10"><span class="st">        </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/theme">theme</a></span>(<span class="dt">legend.position =</span> <span class="st">"none"</span>)</a></code></pre></div>
+<p><img src="Semantic_Librarian_Tutorial_files/figure-html/unnamed-chunk-11-1.png" width="672"></p>
 </div>
   </div>
 
@@ -395,6 +750,9 @@ Canadian Psychology—Past, Present And Future.
       <li><a href="#plot-similar-articles-using-multi-dimensional-scaling">Plot similar articles using multi-dimensional scaling</a></li>
       </ul>
 </li>
+      <li><a href="#abstract-similarity">Abstract similarity</a></li>
+      <li><a href="#author-similarity">Author Similarity</a></li>
+      <li><a href="#plot-author-similarity">plot author similarity</a></li>
       </ul>
 </div>
       </div>
