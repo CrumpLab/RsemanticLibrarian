@@ -1,0 +1,38 @@
+library(usethis)
+create_package("../pname")
+use_description_defaults()
+use_gpl3_license()
+
+use_roxygen_md()
+
+pkgdown::build_site()
+pkgdown::build_articles()
+
+#function creation
+use_r("get_mds_article_fits")
+
+use_rcpp(name = "rowSumsSq")
+
+use_package("lsa", "Suggests")
+usethis::use_package("lsa")
+
+usethis::use_pipe()
+
+use_package_doc()
+use_namespace()
+
+use_vignette("Semantic_Librarian_Tutorial")
+
+
+
+### create sample data
+
+article_df <- article_df[1:100,]
+article_vectors <- article_vectors[1:100,]
+WordVectors <- WordVectors[1:100,]
+author_list <- author_list[1:100]
+dictionary_words <- dictionary_words[1:100]
+
+use_data(article_df,article_vectors,WordVectors,author_list,dictionary_words)
+
+

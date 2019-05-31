@@ -1,11 +1,26 @@
 Package: RsemanticLibrarian
-Type: Package
-Title: What the Package Does in One 'Title Case' Line
-Version: 1.0
-Date: 2019-05-31
-Author: Your Name
-Maintainer: Your Name <your@email.com>
-Description: One paragraph description of what the package does as one or more full sentences.
+Title: Helper Functions for the Semantic Librarian
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Matt",
+           family = "Crump",
+           role = c("aut", "cre"),
+           email = "mcrump@brooklyn.cuny.edu",
+           comment = c(ORCID = "0000-0002-5612-0090"))
+Description: Helper Functions for the Semantic Librarian. Includes functions for: blah blah blah
 License: GPL (>= 2)
-Imports: Rcpp (>= 1.0.1)
+Imports: 
+    Rcpp (>= 1.0.1),
+    magrittr,
+    dplyr,
+    lsa
+LazyData: true
 LinkingTo: Rcpp
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
+Encoding: UTF-8
+Suggests: 
+    LSAfun,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

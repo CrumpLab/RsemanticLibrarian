@@ -5,3 +5,7 @@ rcpp_hello_world <- function() {
     .Call(`_RsemanticLibrarian_rcpp_hello_world`)
 }
 
+rowSumsSq <- function(x) {
+    .Call(`_RsemanticLibrarian_rowSumsSq`, x)
+}
+
