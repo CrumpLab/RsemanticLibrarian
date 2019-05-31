@@ -8,6 +8,10 @@ use_readme_md()
 
 pkgdown::build_site()
 pkgdown::build_articles()
+pkgdown::clean_site()
+pkgdown::build_news()
+
+use_news_md()
 
 #function creation
 use_r("get_mds_author_fits")

@@ -1,0 +1,21 @@
+pkgdown:
+  as_is: true
+  
+template:
+  params:
+    bootswatch: yeti
+
+navbar:
+  structure:
+    left:
+    - home
+    - reference
+    - articles
+    - news
+    right:
+    - github
+  components:
+    github:
+      text: source code
+      icon: fa-lg fa-github
+      href: https://github.com/CrumpLab/RsemanticLibrarian
