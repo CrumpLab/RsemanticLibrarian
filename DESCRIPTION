@@ -13,7 +13,10 @@ Imports:
     Rcpp (>= 1.0.1),
     magrittr,
     dplyr,
-    lsa
+    lsa,
+    qdapRegex,
+    stringr,
+    tidyr
 LazyData: true
 LinkingTo: Rcpp
 Roxygen: list(markdown = TRUE)

@@ -14,12 +14,12 @@ pkgdown::build_news()
 use_news_md()
 
 #function creation
-use_r("get_mds_author_fits")
+use_r("sl_semantic_space")
 
 use_rcpp(name = "rowSumsSq")
 
 use_package("lsa", "Suggests")
-usethis::use_package("lsa")
+usethis::use_package("tidyr")
 
 usethis::use_pipe()
 

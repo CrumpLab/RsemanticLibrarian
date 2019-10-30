@@ -5,16 +5,6 @@
 
 using namespace Rcpp;
 
-// rcpp_hello_world
-List rcpp_hello_world();
-RcppExport SEXP _RsemanticLibrarian_rcpp_hello_world() {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    rcpp_result_gen = Rcpp::wrap(rcpp_hello_world());
-    return rcpp_result_gen;
-END_RCPP
-}
 // rowSumsSq
 NumericVector rowSumsSq(NumericMatrix x);
 RcppExport SEXP _RsemanticLibrarian_rowSumsSq(SEXP xSEXP) {
@@ -28,7 +18,6 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_RsemanticLibrarian_rcpp_hello_world", (DL_FUNC) &_RsemanticLibrarian_rcpp_hello_world, 0},
     {"_RsemanticLibrarian_rowSumsSq", (DL_FUNC) &_RsemanticLibrarian_rowSumsSq, 1},
     {NULL, NULL, 0}
 };
