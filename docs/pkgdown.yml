@@ -4,4 +4,7 @@ pkgdown_sha: ~
 articles:
   SL_bib: SL_bib.html
   Semantic_Librarian_Tutorial: Semantic_Librarian_Tutorial.html
+urls:
+  reference: https://crumplab.github.io/RsemanticLibrarian/reference
+  article: https://crumplab.github.io/RsemanticLibrarian/articles
 

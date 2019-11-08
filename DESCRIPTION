@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "mcrump@brooklyn.cuny.edu",
            comment = c(ORCID = "0000-0002-5612-0090"))
-Description: Helper Functions for the Semantic Librarian. Includes functions for: blah blah blah
+Description: Helper Functions for the Semantic Librarian that vectorize text and visualize semantic spaces.
 License: GPL (>= 2)
 Imports: 
     Rcpp (>= 1.0.1),
