@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_search_article_similarities.R
 \name{get_search_article_similarities}
 \alias{get_search_article_similarities}
-\title{Title}
+\title{Similarities between term vector and article vector}
 \usage{
 get_search_article_similarities(search_terms, d_words = dictionary_words,
   w_vectors = WordVectors, a_vectors = article_vectors,
@@ -25,7 +25,7 @@ get_search_article_similarities(search_terms, d_words = dictionary_words,
 a dataframe containing article information
 }
 \description{
-Title
+Similarities between term vector and article vector
 }
 \details{
 The returned dataframe includes the following:
@@ -40,7 +40,7 @@ The returned dataframe includes the following:
 }
 \examples{
 search <- c("president")
-article_dataframe<-get_search_article_similarities(search,query_type=1)
+article_dataframe <- get_search_article_similarities(search,query_type=1)
 knitr::kable(head(article_dataframe))
 
 }

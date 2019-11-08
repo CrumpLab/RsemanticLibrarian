@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">RsemanticLibrarian</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0.0.0</span>
       </span>
     </div>
 
@@ -85,6 +85,9 @@
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="../articles/SL_bib.html">Semantic Librarian for bib files</a>
+    </li>
     <li>
       <a href="../articles/Semantic_Librarian_Tutorial.html">Semantic Librarian Tutorial</a>
     </li>
@@ -141,7 +144,7 @@
     </tr>
     <tr>
       <th>sparsity</th>
-      <td><p>integer, number of elements in vector</p></td>
+      <td><p>even integer, number of elements in vector</p></td>
     </tr>
     </table>
     
@@ -151,7 +154,8 @@
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='no'>Î</span></div><div class='output co'>#&gt; <span class='error'>Error in eval(expr, envir, enclos): object 'Î' not found</span></div></pre>
+    <pre class="examples"><div class='input'>
+<span class='fu'>sl_create_riv</span>(<span class='fl'>10</span>,<span class='fl'>5</span>,<span class='fl'>1</span>)</div><div class='output co'>#&gt; <span class='error'>Error in sl_create_riv(10, 5, 1): sparsity must be even integer</span></div><div class='input'><span class='fu'>sl_create</span>(<span class='fl'>10</span>,<span class='fl'>5</span>,<span class='fl'>4</span>)</div><div class='output co'>#&gt; <span class='error'>Error in sl_create(10, 5, 4): could not find function "sl_create"</span></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

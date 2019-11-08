@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Title — get_search_article_similarities • RsemanticLibrarian</title>
+<title>Similarities between term vector and article vector — get_search_article_similarities • RsemanticLibrarian</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="Title — get_search_article_similarities" />
+<meta property="og:title" content="Similarities between term vector and article vector — get_search_article_similarities" />
 
-<meta property="og:description" content="Title" />
+<meta property="og:description" content="Similarities between term vector and article vector" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">RsemanticLibrarian</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0.0.0</span>
       </span>
     </div>
 
@@ -85,6 +85,9 @@
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="../articles/SL_bib.html">Semantic Librarian for bib files</a>
+    </li>
     <li>
       <a href="../articles/Semantic_Librarian_Tutorial.html">Semantic Librarian Tutorial</a>
     </li>
@@ -115,14 +118,14 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Title</h1>
+    <h1>Similarities between term vector and article vector</h1>
     
     <div class="hidden name"><code>get_search_article_similarities.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Title</p>
+    <p>Similarities between term vector and article vector</p>
     
     </div>
 
@@ -177,7 +180,7 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='no'>search</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='st'>"president"</span>)
-<span class='no'>article_dataframe</span><span class='kw'>&lt;-</span><span class='fu'>get_search_article_similarities</span>(<span class='no'>search</span>,<span class='kw'>query_type</span><span class='kw'>=</span><span class='fl'>1</span>)
+<span class='no'>article_dataframe</span> <span class='kw'>&lt;-</span> <span class='fu'>get_search_article_similarities</span>(<span class='no'>search</span>,<span class='kw'>query_type</span><span class='kw'>=</span><span class='fl'>1</span>)
 <span class='kw pkg'>knitr</span><span class='kw ns'>::</span><span class='fu'><a href='https://www.rdocumentation.org/packages/knitr/topics/kable'>kable</a></span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/head'>head</a></span>(<span class='no'>article_dataframe</span>))</div><div class='output co'>#&gt; 
 #&gt; 
 #&gt; |formatted_column                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |title                                                                                         |wrap_title                                                                                              | year| index| Similarity|

@@ -11,7 +11,7 @@ sl_create_riv(dim, inds, sparsity)
 
 \item{inds}{integer, number of rows}
 
-\item{sparsity}{integer, number of elements in vector}
+\item{sparsity}{even integer, number of elements in vector}
 }
 \value{
 matrix, each row is an item with dim dimensions
@@ -20,5 +20,7 @@ matrix, each row is an item with dim dimensions
 Create random index vectors
 }
 \examples{
-Î
+
+sl_create_riv(10,5,1)
+sl_create(10,5,4)
 }

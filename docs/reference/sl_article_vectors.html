@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">RsemanticLibrarian</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0.0.0</span>
       </span>
     </div>
 
@@ -85,6 +85,9 @@
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="../articles/SL_bib.html">Semantic Librarian for bib files</a>
+    </li>
     <li>
       <a href="../articles/Semantic_Librarian_Tutorial.html">Semantic Librarian Tutorial</a>
     </li>
@@ -126,7 +129,7 @@
     
     </div>
 
-    <pre class="usage"><span class='fu'>sl_article_vectors</span>(<span class='no'>s_ids</span>, <span class='kw'>w_matrix</span> <span class='kw'>=</span> <span class='no'>WordVectors</span>)</pre>
+    <pre class="usage"><span class='fu'>sl_article_vectors</span>(<span class='no'>s_ids</span>, <span class='kw'>w_matrix</span> <span class='kw'>=</span> <span class='no'>word_vectors</span>, <span class='kw'>verbose</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -138,6 +141,10 @@
     <tr>
       <th>w_matrix</th>
       <td><p>matrix of word vectors</p></td>
+    </tr>
+    <tr>
+      <th>verbose</th>
+      <td><p>logical, controls printing default=FALSE</p></td>
     </tr>
     </table>
     

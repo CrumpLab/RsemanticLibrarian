@@ -4,12 +4,14 @@
 \alias{sl_article_vectors}
 \title{Create article vectors from word vectors}
 \usage{
-sl_article_vectors(s_ids, w_matrix = word_vectors)
+sl_article_vectors(s_ids, w_matrix = word_vectors, verbose = FALSE)
 }
 \arguments{
 \item{s_ids}{list of integer vectors with ids for each word in article}
 
 \item{w_matrix}{matrix of word vectors}
+
+\item{verbose}{logical, controls printing default=FALSE}
 }
 \value{
 matrix of article vectors

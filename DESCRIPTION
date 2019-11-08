@@ -1,6 +1,6 @@
 Package: RsemanticLibrarian
 Title: Helper Functions for the Semantic Librarian
-Version: 0.0.0.9
+Version: 1.0.0.0
 Authors@R: 
     person(given = "Matt",
            family = "Crump",

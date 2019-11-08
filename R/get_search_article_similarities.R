@@ -1,4 +1,4 @@
-#' Title
+#' Similarities between term vector and article vector
 #'
 #' @param search_terms character vector containing search terms (words must appear in dictionary)
 #' @param d_words character vector containing the corpus dictionary, the indexes of the words in the dictionary should match the row indices of the `WordVectors` matrix
@@ -19,7 +19,7 @@
 #'
 #' @examples
 #' search <- c("president")
-#' article_dataframe<-get_search_article_similarities(search,query_type=1)
+#' article_dataframe <- get_search_article_similarities(search,query_type=1)
 #' knitr::kable(head(article_dataframe))
 #' 
 get_search_article_similarities <- function(search_terms,
