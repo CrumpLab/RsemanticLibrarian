@@ -42,4 +42,23 @@ AuthorVectors <- AuthorVectors[1:100,]
 use_data(article_df,article_vectors,WordVectors,author_list,dictionary_words)
 use_data(AuthorVectors)
 
+use_logo("xtra/sl_hex.png")
 
+library(hexSticker)
+imgurl <- "xtra/sl.png"
+sticker(imgurl, package="RsemanticLibrarian", p_size=3.5, s_x=1, s_y=1, s_width=1,
+        l_alpha = .6,
+        p_color ="#635860",
+        h_color = "#635860",
+        h_fill = "#ffffff",
+        #spotlight = TRUE,
+        #l_x = 1,
+        #l_y = 1.4,
+        #l_height = 6,
+        #l_width = 6,
+        url = "crumplab.github.io/RsemanticLibrarian",
+        u_x = 1, u_y = 0.08, u_color = "#635860",
+        u_family = "Aller_Rg", u_size = 1.2, u_angle = 30,
+        white_around_sticker = TRUE,
+        filename="xtra/rsl.png",
+        dpi=600)
