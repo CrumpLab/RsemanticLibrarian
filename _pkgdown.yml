@@ -8,6 +8,7 @@ template:
     img: logo.png
   params:
     bootswatch: yeti
+    ganalytics: UA-79429674-10
 
 navbar:
   structure:
